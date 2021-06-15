@@ -10,21 +10,22 @@
             <div class="card-body bg-warning">
                 <div class="mb-3">
                     <label for="nombre-txt" class="from-label">Nombre</label>
-                    <input type="text" id="nombre-txt" class="from-control">
+                    <div>
+                        <input type="text" id="nombre-txt" class="from-control">
+
+                    </div>
                 </div>
                 <div class="mb-3">
                     <label for="marca-select" class="from-label"></label>
                     <select name="form-select" id="marca-select">
-                        <option value="microsoft">Microsoft</option>
-                        <option value="sony">Sony</option>
-                        <option value="nintendo">Nintendo</option>
-                        <option value="sega">Sega</option>
-    
                     </select>
                 </div>
                 <div class="mb-3">
                     <label for="anio-txt" class="from-label">Año de lanzamiento</label>
-                    <input type="number" class="from-control" id="anio-txt">
+                    <div>
+                        <input type="number" class="from-control" id="anio-txt">
+                    </div>
+                
                 </div>
             </div>
             <div class="card-footer d-grid gap-1 bg-warning">
@@ -35,5 +36,9 @@
     </div>
 </div>    
 
+    
+@endsection
+@section('javascript')
+<script src="{{asset('js/home.js')}}"></script>
     
 @endsection
