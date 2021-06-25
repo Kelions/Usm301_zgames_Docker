@@ -30,15 +30,16 @@
             </div>
             <div class="card-footer d-grid gap-1 bg-warning">
     
-                <button class="btn btn-info">Registrar</button>
+                <button id="registrar-btn" class="btn btn-info">Registrar</button>
             </div>
         </div>
     </div>
 </div>    
 
-    
+<!-- esto define el contenido de la seccion js del master -->    
 @endsection
 @section('javascript')
-<script src="{{asset('js/home.js')}}"></script>
-    
+    <script src="{{asset('js/servicios/consolasService.js')}}"></script>
+    <script src="{{asset('js/home.js')}}"></script>
+
 @endsection
