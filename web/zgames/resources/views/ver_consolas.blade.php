@@ -12,7 +12,7 @@
 
                 </tr>
              </thead>
-             <tbody id="tbody'consola">
+             <tbody id="tbody-consola">
 
              </tbody>
         </table>
@@ -20,4 +20,10 @@
     
 </div>
     
+@endsection
+
+@section("javascript")
+    <script src="{{asset('js/servicios/consolasService.js')}}"></script>
+    <script src="{{asset('js/ver_consolas.js')}}"></script>
+
 @endsection

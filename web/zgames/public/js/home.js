@@ -12,7 +12,11 @@ const cargarMarcas = async()=>{
         });
 
 };
-cargarMarcas();
+//para ejecutar un codigo asegurandoce que el total de la paagina, incluidos los recursoos esten cargaados antes de ejecutar 
+document.addEventListener("DOMContentLoaded", ()=>{
+    cargarMarcas();
+
+});
 
 document.querySelector("#registrar-btn").addEventListener("click", async ()=>{
     let nombre = document.querySelector("#nombre-txt").value;
@@ -27,5 +31,8 @@ document.querySelector("#registrar-btn").addEventListener("click", async ()=>{
     //2. el controlador crea el modelo
     //3. el modelo ingresa a la base de datos
     let res = await crearConsolas(consolas);
-    Swal.fire("consola creada","consola creada exitosamente","info")
+    await Swal.fire("consola creada","consola creada exitosamente","info")
+
+    //Aca se va a redirigir  a otra pagina
+    window.location.href= "ver_consolas"
 });
