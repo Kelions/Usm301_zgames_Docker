@@ -19,3 +19,5 @@ Route::get("consolas/get",[ConsolasController::class,"getConsolas"]);
 Route::post("consolas/post",[ConsolasController::class,"crearConsolas"]);
 
 Route::post("consolas/delete",[ConsolasController::class,"eliminarConsola"]);
+
+Route::get("consolas/filtrar",[ConsolasController::class,"filtrarConsolas"]);

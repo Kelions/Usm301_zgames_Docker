@@ -1,5 +1,23 @@
 @extends('layouts.master')
 @section('contenido')
+<div class="row mt-2">
+    <div class="col-12 col-md-6 col-lg-5">
+        <div class="card">
+            <div class="card-header bg-warning text-withe">
+                <samp>Filtrar</samp>
+            </div>
+            <div class="card-body">
+                <select class="form-select" id="filtro-cbx">
+
+                    <option value="Todos">Todos</option>
+
+                </select>
+
+            </div>
+        </div>
+    </div>
+
+</div>
 <div class="row mt-5">
     <div class="col-12 col-md-12 col-lg-6 mx-auto">
         <table class="table table-hover table bordered table-striped table-responsive">
@@ -24,6 +42,7 @@
 
 @section("javascript")
     <script src="{{asset('js/servicios/consolasService.js')}}"></script>
+    <script src="{{asset('js/servicios/marcasService.js')}}"></script>
     <script src="{{asset('js/ver_consolas.js')}}"></script>
 
 @endsection

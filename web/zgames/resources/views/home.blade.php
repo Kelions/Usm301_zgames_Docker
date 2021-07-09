@@ -9,9 +9,9 @@
             </div>
             <div class="card-body bg-warning">
                 <div class="mb-3">
-                    <label for="nombre-txt" class="from-label">Nombre</label>
+                    <label for="nombre-txt" class="form-label">Nombre</label>
                     <div>
-                        <input type="text" id="nombre-txt" class="from-control">
+                        <input type="text" id="nombre-txt" class="form-control">
 
                     </div>
                 </div>
@@ -40,6 +40,7 @@
 @endsection
 @section('javascript')
     <script src="{{asset('js/servicios/consolasService.js')}}"></script>
+    <script src="{{asset('js/servicios/marcasService.js')}}"></script>
     <script src="{{asset('js/home.js')}}"></script>
 
 @endsection
